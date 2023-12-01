@@ -10,10 +10,10 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 import pickle
 
-bert_model_path = "/Users/niharikabatra/Library/CloudStorage/GoogleDrive-niharikabatra111@gmail.com/My Drive/Niharika docs/UTA 2023 /Data Science/Project_Text/TM_Bertopic/BERTopicmodel_50k_1.pkl"
+bert_model_path = "/Users/juanita/TM_Bertopic/BERTopicmodel_50k_1.pkl"
 loaded_bertopic_model = BERTopic.load(bert_model_path)
 
-lda_model_path = "/Users/niharikabatra/Library/CloudStorage/GoogleDrive-niharikabatra111@gmail.com/My Drive/Niharika docs/UTA 2023 /Data Science/Project_Text/TM_Bertopic/lda_model_project.pkl"
+lda_model_path = "/Users/juanita/lda_model_project.pkl"
 
 with open(lda_model_path, 'rb') as file:
     lda_model = pickle.load(file)
